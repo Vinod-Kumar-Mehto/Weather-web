@@ -25,7 +25,7 @@ app.get("/about", (req, res) => {
 
     res.render('about', {
         title: 'about me',
-        name: 'vinod kumar mahato'
+        name: 'vinod kumar mehto'
 
     })
 })
