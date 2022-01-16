@@ -9,7 +9,8 @@ const weather = (lat, long, callback) => {
             callback("unable to find", undefined)
         } else {
 
-            callback(undefined, response.body.current.weather_descriptions[0])
+            callback(undefined, response.body.current.weather_descriptions[0], response.body.current.temperature)
+
 
 
         }

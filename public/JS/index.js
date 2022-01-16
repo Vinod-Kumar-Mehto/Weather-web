@@ -12,7 +12,7 @@ let frm = document.querySelector('form').addEventListener('submit', (e) => {
             if (data.error) {
                 document.querySelector('p').innerText = data.error
             } else {
-                document.querySelector('p').innerText = `Weather is ${data.forecast} and location is ${data.location}`
+                document.querySelector('p').innerText = `Weather is ${data.forecast} ${data.temperature} degree celsius temperature and location is ${data.location}`
             }
 
         })
