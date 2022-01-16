@@ -6,6 +6,7 @@ const forecast = require('./weather')
 
 console.log(__filename)
 const app = express()
+const port = process.env.PORT || 4000
 const public = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialPath = path.join(__dirname, '../templates/partials')
@@ -56,10 +57,6 @@ app.get("/weather", (req, res) => {
 
 
     })
-    // res.send({
-    //     tem: '44 deg',
-    //     name: 'cidjdk dkdkdk'
-    // })
 
 })
 
@@ -72,6 +69,6 @@ app.get('*', (req, res) => {
     res.render('error')
 
 })
-app.listen(4000, () => {
-    
+app.listen(port, () => {
+
 })
